@@ -64,7 +64,7 @@ const TodoList = () => {
                       ✏️
                     </button>
                     <input
-                      id="checkboxComplete"
+                      id={todo.id}
                       type="checkbox"
                       title="Completed"
                       checked={todo.completeStatus}
@@ -78,7 +78,7 @@ const TodoList = () => {
                       }
                       className="cursor-pointer"
                     />
-                    <label className="text-white" htmlFor="checkboxComplete">
+                    <label className="text-white" htmlFor={todo.id}>
                       {" "}
                       Completed
                     </label>
